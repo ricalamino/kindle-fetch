@@ -1,0 +1,25 @@
+{
+  "name": "kindle-fetch",
+  "version": "1.0.0",
+  "description": "Get your kindle books back to you",
+  "main": "fetch_kindle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricalamino/kindle-fetch.git"
+  },
+  "author": "Ricardo C. Alamino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricalamino/kindle-fetch/issues"
+  },
+  "homepage": "https://github.com/ricalamino/kindle-fetch#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "osenv": "^0.1.5",
+    "path": "^0.12.7",
+    "sqlite3": "^4.1.1"
+  }
+}
