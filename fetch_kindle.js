@@ -233,7 +233,7 @@ db.all("select metadata from 'bookinfo'", function(err, rows) {
             '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">' +
             '<meta name="author" content="' + authors + '">' +
             '</head><body id="' + asin + '">';
-        var HtmlFile = path.join(os.tmpdir(), title.replace(/\:|\s+|\|/g, '-') + '.html');
+        var HtmlFile = path.join(os.tmpdir(), title.replace(/\:|\.|\s+|\|/g, '-') + '.html');
 
         fs.writeFileSync(HtmlFile, HtmlHeader);
         console.log("created the file with HTML headers.");
